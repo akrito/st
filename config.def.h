@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+char font[] = "Go Mono:pixelsize=12:antialias=true:hintstyle=hintfull:autohint=true";
 int borderpx = 2;
 
 /*
@@ -88,7 +88,7 @@ const char *colorname[] = {
 	"black",
 	"red3",
 	"green3",
-	"yellow3",
+	"gray10",
 	"blue2",
 	"magenta3",
 	"cyan3",
@@ -98,7 +98,7 @@ const char *colorname[] = {
 	"gray50",
 	"red",
 	"green",
-	"yellow",
+	"gray20",
 	"#5c5cff",
 	"magenta",
 	"cyan",
@@ -109,6 +109,7 @@ const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+	"#ffffea",
 };
 
 
@@ -116,8 +117,8 @@ const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
+unsigned int defaultfg = 0;
+unsigned int defaultbg = 258;
 unsigned int defaultcs = 256;
 unsigned int defaultrcs = 257;
 
@@ -463,4 +464,3 @@ char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
-
